@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<VideoData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Moe.GameFramework">
+  <_UIScale>Small</_UIScale>
+  <anisotropicFiltering xmlns:d2p1="http://schemas.datacontract.org/2004/07/UnityEngine">ForceEnable</anisotropicFiltering>
+  <antiAliasing>x8</antiAliasing>
+  <fullscreen>true</fullscreen>
+  <realTimeReflections>true</realTimeReflections>
+  <reflectionsQuality>Ultra</reflectionsQuality>
+  <resolution xmlns:d2p1="http://schemas.datacontract.org/2004/07/Moe.Tools">
+    <d2p1:height>1600</d2p1:height>
+    <d2p1:refreshRate>60</d2p1:refreshRate>
+    <d2p1:width>2560</d2p1:width>
+  </resolution>
+  <shadows xmlns:d2p1="http://schemas.datacontract.org/2004/07/UnityEngine">Soft</shadows>
+  <shadowsDistance>150</shadowsDistance>
+  <shadowsQuality>Ultra</shadowsQuality>
+  <textureQuality>High</textureQuality>
+  <vsync>On</vsync>
+</VideoData>

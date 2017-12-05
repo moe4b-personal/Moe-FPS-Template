@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<AudioData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Moe.GameFramework">
+  <channels>
+    <AudioChannel>
+      <name>Footsteps</name>
+      <volume>1</volume>
+    </AudioChannel>
+    <AudioChannel>
+      <name>Gunshots</name>
+      <volume>1</volume>
+    </AudioChannel>
+  </channels>
+  <volume>1</volume>
+</AudioData>

@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 126eacab7c75a4947a366247ef25b5da, type: 3}
+  m_Name: Controller Input
+  m_EditorClassIdentifier: 
+  movement: {x: 0, y: 0}
+  look: {x: 0, y: 0}
+  lean: 0
+  jump: 0
+  sprint: 0
+  crouch: 0
+  prone: 0
+  walkAxis:
+    positive:
+      category: 0
+      binding: 0
+    negative:
+      category: 0
+      binding: 1
+    rawValue: 0
+  strafeAxis:
+    positive:
+      category: 0
+      binding: 2
+    negative:
+      category: 0
+      binding: 3
+    rawValue: 0
+  jumpBind:
+    category: 0
+    binding: 4
+  sprintBind:
+    category: 0
+    binding: 5
+  crouchBind:
+    category: 0
+    binding: 6
+  proneBind:
+    category: 0
+    binding: 7

@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<UIData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Moe.GameFramework">
+  <slots>
+    <UIData.Slot>
+      <name>Toggle</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+    <UIData.Slot>
+      <name>Slider</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+    <UIData.Slot>
+      <name>Scrollbar</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+    <UIData.Slot>
+      <name>InputField</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+    <UIData.Slot>
+      <name>Dropdown</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+    <UIData.Slot>
+      <name>OptionsBox</name>
+      <data i:nil="true" />
+    </UIData.Slot>
+  </slots>
+</UIData>

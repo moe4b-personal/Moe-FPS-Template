@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ControlData xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.datacontract.org/2004/07/Moe.GameFramework">
+  <currentInputDevice>Keyboard</currentInputDevice>
+  <keyBindings>
+    <KeyBindingsCategory>
+      <name>Key Bindings</name>
+      <bindings>
+        <KeyBinding>
+          <name>Walk Forward</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">W</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Walk Backwards</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">S</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Strafe Right</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">D</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Strafe Left</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">A</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Jump</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">Space</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Sprint</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">LeftShift</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Crouch</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">C</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Prone</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">LeftControl</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Shoot</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">Mouse0</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Aim</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">Mouse1</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+        <KeyBinding>
+          <name>Reload</name>
+          <primary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">R</primary>
+          <secondary xmlns:d6p1="http://schemas.datacontract.org/2004/07/UnityEngine">None</secondary>
+        </KeyBinding>
+      </bindings>
+    </KeyBindingsCategory>
+  </keyBindings>
+</ControlData>

@@ -1,0 +1,174 @@
+fileFormatVersion: 2
+guid: 6a980c6c5299d444d99ffa0d787508fe
+timeCreated: 1512217161
+licenseType: Free
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Base
+    100004: Blocker
+    100006: Blocker_2
+    100008: Blocker_I
+    100010: Blockers
+    100012: Floor
+    100014: Null
+    100016: Symmetry
+    100018: Arena
+    100020: Blocker_3
+    100022: Blocker_4
+    100024: Blocker_5
+    100026: Blocker_6
+    100028: Blocker_7
+    100030: Blocker_8
+    100032: Blocker_9
+    100034: Blocker_I_1
+    100036: Blocker_I_2
+    100038: Blocker_I_3
+    100040: Blocker_I_4
+    100042: Blocker_I_5
+    100044: Blocker_I_6
+    100046: Blocker_I_7
+    400000: //RootNode
+    400002: Base
+    400004: Blocker
+    400006: Blocker_2
+    400008: Blocker_I
+    400010: Blockers
+    400012: Floor
+    400014: Null
+    400016: Symmetry
+    400018: Arena
+    400020: Blocker_3
+    400022: Blocker_4
+    400024: Blocker_5
+    400026: Blocker_6
+    400028: Blocker_7
+    400030: Blocker_8
+    400032: Blocker_9
+    400034: Blocker_I_1
+    400036: Blocker_I_2
+    400038: Blocker_I_3
+    400040: Blocker_I_4
+    400042: Blocker_I_5
+    400044: Blocker_I_6
+    400046: Blocker_I_7
+    2300000: Base
+    2300002: Blocker
+    2300004: Blocker_2
+    2300006: Floor
+    2300008: Blocker_3
+    2300010: Blocker_4
+    2300012: Blocker_5
+    2300014: Blocker_6
+    2300016: Blocker_7
+    2300018: Blocker_8
+    2300020: Blocker_9
+    3300000: Base
+    3300002: Blocker
+    3300004: Blocker_2
+    3300006: Floor
+    3300008: Blocker_3
+    3300010: Blocker_4
+    3300012: Blocker_5
+    3300014: Blocker_6
+    3300016: Blocker_7
+    3300018: Blocker_8
+    3300020: Blocker_9
+    4300000: Floor
+    4300002: Base
+    4300004: Blocker
+    4300006: Blocker_2
+    4300008: Blocker_3
+    4300010: Blocker_4
+    4300012: Blocker_5
+    4300014: Blocker_6
+    4300016: Blocker_7
+    4300018: Blocker_8
+    4300020: Blocker_9
+    6400000: Base
+    6400002: Blocker
+    6400004: Blocker_2
+    6400006: Floor
+    6400008: Blocker_3
+    6400010: Blocker_4
+    6400012: Blocker_5
+    6400014: Blocker_6
+    6400016: Blocker_7
+    6400018: Blocker_8
+    6400020: Blocker_9
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 5
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
