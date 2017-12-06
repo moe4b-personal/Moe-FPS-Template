@@ -49,6 +49,8 @@ namespace Moe.GameFramework
             aim = Game.Control.GetKeyBindDown(aimBind);
 
             reload = Game.Control.GetKeyBindDown(reloadBind);
+
+            switchDirection = Mathf.RoundToInt(Input.GetAxis("Mouse ScrollWheel") * -10);
         }
 
         public override void Clear()

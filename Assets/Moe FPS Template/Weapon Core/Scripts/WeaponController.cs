@@ -143,7 +143,7 @@ namespace WeaponCore
 
         protected virtual void UpdateSwitch(int input)
         {
-            if(input == 0)
+            if (input == 0)
             {
 
             }
@@ -152,14 +152,12 @@ namespace WeaponCore
                 KitSlot newSlot = slot;
 
                 if (input > 0)
-                    slot = GetNextValidSlot();
+                    newSlot = GetNextValidSlot();
                 else
-                    slot = GetPreviousValidSlot();
+                    newSlot = GetPreviousValidSlot();
 
                 if(newSlot != slot)
-                {
                     Equip(newSlot);
-                }
             }
         }
         public virtual KitSlot GetNextValidSlot()
@@ -180,7 +178,7 @@ namespace WeaponCore
 
             do
             {
-                newSlot = slot.GetNextValue();
+                newSlot = slot.GetPreviousValue();
             }
             while (kit[newSlot] == null);
 
@@ -219,7 +217,7 @@ namespace WeaponCore
                 if (i == WeaponKit.SlotToIndex(slot))
                     EquipInternal(slot);
                 else
-                    kit[i].Disable();
+                    kit[i].UnEquip.Apply();
             }
         }
 
@@ -286,19 +284,19 @@ namespace WeaponCore
         }
         protected virtual void EquipInternal(KitSlot newSlot)
         {
-            kit[newSlot].Equip();
+            kit[newSlot].Equip.Process();
 
             slot = newSlot;
         }
         protected virtual void UnEquip()
         {
             if (CurrentWeapon)
-                CurrentWeapon.UnEquip();
+                CurrentWeapon.UnEquip.Process();
         }
 
         protected virtual void Drop(KitSlot slot)
         {
-            kit[slot].Drop();
+            kit[slot].Drop.Process();
         }
 
         [Serializable]

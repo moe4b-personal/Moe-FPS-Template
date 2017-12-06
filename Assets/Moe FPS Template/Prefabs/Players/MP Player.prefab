@@ -1671,6 +1671,8 @@ MonoBehaviour:
     delta: 4
     gravity: 6
   aud: {fileID: 82176343551743344}
+  bob:
+    multiplier: 0.2
 --- !u!114 &114432673998152408
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -128,6 +128,8 @@ namespace WeaponCore
             {
                 if (Weapon.CanAim && input)
                     Toggle();
+
+                Weapon.Controller.Sway.RangeScale = isOn ? swayScale : 1f;
             }
 
             public event Action<bool> OnToggle;
@@ -136,8 +138,6 @@ namespace WeaponCore
                 isOn = !isOn;
 
                 Weapon.anim.SetBool("Aim", isOn);
-
-                Weapon.Controller.Sway.RangeScale = isOn ? swayScale : 1f;
 
                 if (OnToggle != null)
                     OnToggle(isOn);

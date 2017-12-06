@@ -29,15 +29,22 @@ namespace WeaponCore
             protected float bobScale = 0.2f;
             public float BobScale { get { return bobScale; } }
 
-            public override void Toggle()
+            public override void Process(bool input)
             {
-                base.Toggle();
+                base.Process(input);
 
                 Weapon.Controller.Bob.Scale = isOn ? bobScale : 1f;
             }
 
             public partial class StateMachinesModule
             {
+                public override void Disable()
+                {
+                    base.Disable();
+
+                    Level.MenuInstance.HUD.Crosshair.Visibility = true;
+                }
+
                 protected override void OnStart()
                 {
                     base.OnStart();

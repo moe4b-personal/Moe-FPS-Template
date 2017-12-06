@@ -955,6 +955,13 @@ MonoBehaviour:
   range: 100
   aim:
     isOn: 0
+    swayScale: 0.2
+    stateMachines:
+      start: {fileID: 0}
+      idle: {fileID: 0}
+      end: {fileID: 0}
+      shot: {fileID: 0}
+    bobScale: 0.2
   ammo:
     clip:
       value: 12
@@ -965,6 +972,7 @@ MonoBehaviour:
   shoot:
     mode: 0
     sounds: {fileID: 11400000, guid: 01d4559b761821746ae14fc110754c44, type: 2}
+    crosshairKick: 35
   reload:
     autoReload: 1
   cast:

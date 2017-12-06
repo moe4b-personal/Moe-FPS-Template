@@ -29,5 +29,19 @@ namespace WeaponCore
 
             Level.MenuInstance.HUD.Weapons.UpdateAmmo(this);
         }
+
+        public partial class ShootModule
+        {
+            [SerializeField]
+            protected float crosshairKick = 25f;
+            public float CrosshairKick { get { return crosshairKick; } }
+
+            protected override void Process()
+            {
+                base.Process();
+
+                Level.MenuInstance.HUD.Crosshair.DistanceValue = crosshairKick;
+            }
+        }
     }
 }

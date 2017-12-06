@@ -657,8 +657,6 @@ MonoBehaviour:
     delay: 0.5
   anim: {fileID: 95311154116790640}
   range: 1
-  aim:
-    isOn: 0
   cast:
     mask:
       serializedVersion: 2

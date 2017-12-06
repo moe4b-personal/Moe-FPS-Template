@@ -759,7 +759,14 @@ MonoBehaviour:
     secondary: {fileID: 0}
     melee: {fileID: 0}
   slot: 0
+  sway:
+    input: {x: 0, y: 0}
+    range: {x: 0.1, y: 0.06}
+    delta: 4
+    gravity: 6
   aud: {fileID: 82537306253042372}
+  bob:
+    multiplier: 0.2
 --- !u!124 &124877095374083338
 Behaviour:
   m_ObjectHideFlags: 1

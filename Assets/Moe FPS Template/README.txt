@@ -5,3 +5,8 @@ Requirements :
 -Advanced FirstPerson Rigidbody Controller v1.1 (Free !)
 
 to setup you need to re-configure the Framework through the top toolbar Moe/Game Framework/Configure
+
+Changelog:
+Current Progress:
+-Added Dynamic Crosshair
+-Bug Fixes (Aiming)

@@ -251,6 +251,69 @@ namespace WeaponCore
         protected Animator anim;
         public Animator Anim { get { return anim; } }
 
+        [SerializeField]
+        protected Weapon.EquipModule equip;
+        public Weapon.EquipModule Equip { get { return equip; } }
+        [Serializable]
+        public abstract class BaseEquipModule : Weapon.Module<Weapon>
+        {
+            protected StateMachineCallbackRewind callback;
+            public StateMachineCallbackRewind Callback { get { return callback; } }
+
+            public virtual void Process()
+            {
+                Apply();
+            }
+            public virtual void Apply()
+            {
+                Weapon.gameObject.SetActive(true);
+
+                Weapon.Modules.Activate();
+
+                callback = Weapon.anim.GetBehaviour<StateMachineCallbackRewind>("Equip");
+                callback.StateExit.Simple += OnEnd;
+                Weapon.CanProcess = false;
+            }
+
+            protected virtual void OnEnd()
+            {
+                Weapon.CanProcess = true;
+            }
+        }
+
+        [SerializeField]
+        protected Weapon.UnEquipModule unEquip;
+        public Weapon.UnEquipModule UnEquip { get { return unEquip; } }
+        [Serializable]
+        public abstract class BaseUnEquipModule : Weapon.Module<Weapon>
+        {
+            public virtual void Process()
+            {
+                Apply();
+            }
+            public virtual void Apply()
+            {
+                Weapon.gameObject.SetActive(false);
+
+                Weapon.Modules.Disable();
+
+                Weapon.CanProcess = true;
+            }
+        }
+        public virtual bool CanUnEquip { get { return true; } }
+
+        [SerializeField]
+        protected Weapon.DropModule drop;
+        public Weapon.DropModule Drop { get { return drop; } }
+        [Serializable]
+        public abstract class BaseDropModule : Weapon.Module<Weapon>
+        {
+            public virtual void Process()
+            {
+
+            }
+        }
+
         protected virtual void Reset()
         {
 
@@ -272,45 +335,13 @@ namespace WeaponCore
         }
         protected virtual void AddModules()
         {
+            Modules.Add(equip);
+            Modules.Add(unEquip);
+            Modules.Add(drop);
+
             Modules.Add(typeCast);
             Modules.Add(use);
             Modules.Add(sprint);
-        }
-
-        public virtual void Equip()
-        {
-            Activate();
-        }
-        public virtual void Activate()
-        {
-            gameObject.SetActive(true);
-
-            Modules.Activate();
-        }
-
-        public virtual bool CanUnEquip
-        {
-            get
-            {
-                return true;
-            }
-        }
-        public virtual void UnEquip()
-        {
-            Disable();
-        }
-        public virtual void Disable()
-        {
-            gameObject.SetActive(false);
-
-            Modules.Disable();
-
-            CanProcess = true;
-        }
-
-        public virtual void Drop()
-        {
-
         }
 
         public delegate void DoDamageDelegate(GameObject damaged, int damage);
@@ -474,6 +505,23 @@ namespace WeaponCore
 
         }
 
+        [Serializable]
+        public partial class EquipModule : BaseEquipModule
+        {
+
+        }
+
+        [Serializable]
+        public partial class UnEquipModule : BaseUnEquipModule
+        {
+
+        }
+
+        [Serializable]
+        public partial class DropModule : BaseDropModule
+        {
+
+        }
 
         [Serializable]
         public partial class UseModule : BaseUseModule
