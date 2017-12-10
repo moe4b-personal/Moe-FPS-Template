@@ -23,7 +23,7 @@ using ARFC;
 
 namespace Moe.FPSTemplate
 {
-    [CreateAssetMenu(menuName = FPControllerInputModule.MenuPath + "Bind")]
+    [CreateAssetMenu(menuName = FPControllerInputModule.MenuPath + "Bind Module")]
     public partial class BindFPControllerInputModule : FPControllerInputModule
     {
         [SerializeField]

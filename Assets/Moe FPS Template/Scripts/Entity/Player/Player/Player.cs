@@ -75,7 +75,7 @@ namespace Moe.GameFramework
         }
         protected virtual void InitLayers()
         {
-            GameTools.GameObject.SetLayer(gameObject, isLocalPlayer ? layers.Local : layers.Remote);
+            MoeTools.GameObject.SetLayer(gameObject, isLocalPlayer ? layers.Local : layers.Remote);
         }
 
         protected override void InitLocal()
@@ -161,12 +161,12 @@ namespace Moe.GameFramework
         {
             var hash = prefab.GetComponent<NetworkIdentity>().assetId;
 
-            CmdSpawnProjectile(hash, shooterID, position, rotation, force, GameTools.Serialization.Binary.GetBytes(data));
+            CmdSpawnProjectile(hash, shooterID, position, rotation, force, MoeTools.Serialization.Binary.GetBytes(data));
         }
         [Command]
         protected virtual void CmdSpawnProjectile(NetworkHash128 prefabHash, uint shooterID, Vector3 position, Quaternion rotation, float force, byte[] dataBytes)
         {
-            var data = GameTools.Serialization.Binary.GetObject<ProjectileData>(dataBytes);
+            var data = MoeTools.Serialization.Binary.GetObject<ProjectileData>(dataBytes);
 
             GameObject prefab = ClientScene.prefabs[prefabHash];
             
@@ -186,7 +186,7 @@ namespace Moe.GameFramework
         {
             projectile.GetComponent<Projectile>().Init();
 
-            GameTools.GameObject.SetCollision(projectile, ClientScene.FindLocalObject(new NetworkInstanceId(shooterID)), false);
+            MoeTools.GameObject.SetCollision(projectile, ClientScene.FindLocalObject(new NetworkInstanceId(shooterID)), false);
         }
 
         protected virtual void OnPause(PauseState state)

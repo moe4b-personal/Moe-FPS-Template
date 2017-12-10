@@ -23,7 +23,7 @@ namespace WeaponCore
 {
     public abstract partial class BaseWeapon : TypesData.TWeapon
     {
-        public const string MenuPath = Constants.CreateAssetMenuPath + "Weapons/";
+        public const string MenuPath = MoeTools.Constants.Paths.Menu + "Weapons/";
 
         private Weapon This { get { return this as Weapon; } }
 

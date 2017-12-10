@@ -66,7 +66,7 @@ namespace WeaponCore
 
             protected virtual void InitProjectile(Projectile projectile)
             {
-                GameTools.GameObject.SetCollision(projectile.gameObject, Weapon.Player.gameObject, false);
+                MoeTools.GameObject.SetCollision(projectile.gameObject, Weapon.Player.gameObject, false);
 
                 projectile.SetData(GetProjectileData());
             }

@@ -8,8 +8,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aada32c4fbde2114da3be05752a10025, type: 3}
-  m_Name: MP Player Input
+  m_Script: {fileID: 11500000, guid: db5a8b9698c174140816d5ecb0da8246, type: 3}
+  m_Name: SP Player Input
   m_EditorClassIdentifier: 
   shootBind:
     category: 0
@@ -17,6 +17,7 @@ MonoBehaviour:
   aimBind:
     category: 0
     binding: 9
+  switchDirection: 0
   reloadBind:
     category: 0
     binding: 10

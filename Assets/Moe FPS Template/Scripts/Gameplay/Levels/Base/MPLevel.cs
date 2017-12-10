@@ -46,7 +46,7 @@ namespace Moe.GameFramework
                 KeyCode key;
                 for (int i = 0; i < 12; i++)
                 {
-                    key = GameTools.Enum.Parse<KeyCode>("F" + (i + 1));
+                    key = MoeTools.Enum.Parse<KeyCode>("F" + (i + 1));
 
                     if (players.Characters.IsInRange(i) && Input.GetKeyDown(key))
                             players.SpawnCharacter(i);

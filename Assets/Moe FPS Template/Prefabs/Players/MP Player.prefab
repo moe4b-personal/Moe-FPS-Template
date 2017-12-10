@@ -298,9 +298,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4167248202815460}
   - component: {fileID: 114752575248390876}
-  - component: {fileID: 114353366304426828}
   - component: {fileID: 114095199911406566}
-  - component: {fileID: 114432673998152408}
   - component: {fileID: 136528002813935280}
   - component: {fileID: 54719096446517184}
   - component: {fileID: 82185881413428244}
@@ -1609,30 +1607,7 @@ MonoBehaviour:
     scale: 1
     states: {fileID: 11400000, guid: 4127501edc3dac447b7f42bb2492d36e, type: 2}
     offset: {x: 0, y: 0, z: 0}
---- !u!114 &114353366304426828
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442878963383034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 89cc26307abca6845b0847a691409ac8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platforms:
-  - name: PC
-    module: {fileID: 11400000, guid: 2431f4ce60e0df046bd20c140f1fb909, type: 2}
-    supportedPlatforms: 0700000002000000000000000100000004000000100000000d000000
-  - name: Mobile
-    module: {fileID: 0}
-    supportedPlatforms: 0b0000000800000017000000
-  - name: XBOX
-    module: {fileID: 0}
-    supportedPlatforms: 1b000000
-  - name: PS4
-    module: {fileID: 0}
-    supportedPlatforms: 19000000
+  inputModulator: {fileID: 11400000, guid: b1e17bbdf11d263419ceb824f5772e4b, type: 2}
 --- !u!114 &114357647289810298
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1673,30 +1648,6 @@ MonoBehaviour:
   aud: {fileID: 82176343551743344}
   bob:
     multiplier: 0.2
---- !u!114 &114432673998152408
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1442878963383034}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1d910b6b317fdd44f993764e788dd71b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  platforms:
-  - name: PC
-    module: {fileID: 11400000, guid: 9e58f50535356c24fbb2a30010eb40e5, type: 2}
-    supportedPlatforms: 0700000002000000000000000100000004000000100000000d000000
-  - name: Mobile
-    module: {fileID: 0}
-    supportedPlatforms: 0b0000000800000017000000
-  - name: XBOX
-    module: {fileID: 0}
-    supportedPlatforms: 1b000000
-  - name: PS4
-    module: {fileID: 0}
-    supportedPlatforms: 19000000
 --- !u!114 &114642549850197474
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1787,6 +1738,7 @@ MonoBehaviour:
     remote: Remote Player
   weapons: {fileID: 114395563633283430}
   aud: {fileID: 82185881413428244}
+  inputModulator: {fileID: 11400000, guid: eec16b311acd34d4180667433cf259b5, type: 2}
   body: {fileID: 114092384096056954}
 --- !u!114 &114937402635088614
 MonoBehaviour:
