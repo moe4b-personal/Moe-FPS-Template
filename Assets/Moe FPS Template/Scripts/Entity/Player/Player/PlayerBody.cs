@@ -58,7 +58,7 @@ namespace Moe.FPSTemplate
         {
             Vector2 move = Controller.Movement.Speed.Vector;
 
-            move /= Controller.Movement.Speed.Current.Max;
+            move /= Controller.Movement.Speed.Value.Max;
 
             Crouching = Controller.CurrentState == ControllerState.Crouching;
             Proning = Controller.CurrentState == ControllerState.Proning;

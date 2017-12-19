@@ -23,8 +23,10 @@ namespace ARFC
 {
 	public partial class FPController
 	{
-        protected override void Start()
+        protected override void Awake()
         {
+            base.Awake();
+
             Game.Pause.OnStateChanged += OnPause;
         }
 
