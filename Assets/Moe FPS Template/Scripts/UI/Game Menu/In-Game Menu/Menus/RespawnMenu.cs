@@ -34,7 +34,7 @@ namespace Moe.FPSTemplate
         {
             get
             {
-                return Game.Pause.State == PauseState.None;
+                return Game.Pause.State == GamePauseState.None;
             }
         }
 

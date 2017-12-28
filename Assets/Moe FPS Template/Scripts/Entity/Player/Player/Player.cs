@@ -91,7 +91,7 @@ namespace Moe.GameFramework
 
         protected override void UpdateLocal()
         {
-            if (Game.Pause.State == PauseState.Full)
+            if (Game.Pause.State == GamePauseState.Full)
                 return;
 
             base.UpdateLocal();
@@ -103,7 +103,7 @@ namespace Moe.GameFramework
 
         protected override void UpdateInputModule()
         {
-            if(Game.Pause.State == PauseState.None)
+            if(Game.Pause.State == GamePauseState.None)
                 base.UpdateInputModule();
         }
 
@@ -189,7 +189,7 @@ namespace Moe.GameFramework
             MoeTools.GameObject.SetCollision(projectile, ClientScene.FindLocalObject(new NetworkInstanceId(shooterID)), false);
         }
 
-        protected virtual void OnPause(PauseState state)
+        protected virtual void OnPause(GamePauseState state)
         {
             BaseInputModule.Clear();
         }

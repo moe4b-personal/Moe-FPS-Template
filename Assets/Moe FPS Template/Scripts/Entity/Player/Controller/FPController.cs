@@ -39,11 +39,11 @@ namespace ARFC
 
         protected override void UpdateInputModule()
         {
-            if (Game.Pause.State == PauseState.None)
+            if (Game.Pause.State == GamePauseState.None)
                 base.UpdateInputModule();
         }
 
-        protected virtual void OnPause(PauseState state)
+        protected virtual void OnPause(GamePauseState state)
         {
             InputModule.Clear();
         }
