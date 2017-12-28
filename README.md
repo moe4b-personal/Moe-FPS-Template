@@ -1,7 +1,7 @@
 A FirstPerson Shooter Template From Moe Game Framework.<p>
 Requires:<p>
 * Moe Game Framework ([Asset Store](http://u3d.as/Zg7))
-* Advanced Rigidbody FirstPerson Controller (Free !) ([Github](https://github.com/Moe-Baker/Advanced-Rigidbody-FirstPerson-Controller) & Asset Store (Soon))
+* Advanced Rigidbody FirstPerson Controller (Free !) ([Github](https://github.com/Moe-Baker/Advanced-Rigidbody-FirstPerson-Controller) & [Asset Store](https://www.assetstore.unity3d.com/#!/content/105090))
 <p>
 <p>
   
