@@ -6,9 +6,9 @@
 /Documentation/
 /Doc
 /Assets/Sandbox*
-/Assets/Moe Game Framework*
-/Assets/Advanced Rigidbody FirstPerson Controller*
-/Assets/Moe Tools*
+/Assets/Moe Baker/Moe Game Framework*
+/Assets/Moe Baker/Advanced Rigidbody FirstPerson Controller*
+/Assets/Moe Baker/Moe Tools*
 /Assets/AssetStoreTools*
 
 # Visual Studio 2015 cache directory
