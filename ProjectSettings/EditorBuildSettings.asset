@@ -6,14 +6,14 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Moe FPS Template/Scenes/Main Menu.unity
+    path: Assets/Moe Baker/Moe FPS Template/Scenes/Main Menu.unity
     guid: f877249774b51fc478e23486c504eb0e
   - enabled: 1
-    path: Assets/Moe Game Framework/Scenes/Loading Menu.unity
+    path: Assets/Moe Baker/Moe Game Framework/Scenes/Loading Menu.unity
     guid: 4158b98c4d25e354199e9d808dcaa95c
   - enabled: 1
-    path: Assets/Moe FPS Template/Scenes/Levels/Arena MP/Arena MP.unity
+    path: Assets/Moe Baker/Moe FPS Template/Scenes/Levels/Arena MP/Arena MP.unity
     guid: e265ab09b69e244489fb472cc32dc9e6
   - enabled: 1
-    path: Assets/Moe FPS Template/Scenes/Levels/Arena SP/Arena SP.unity
+    path: Assets/Moe Baker/Moe FPS Template/Scenes/Levels/Arena SP/Arena SP.unity
     guid: 05054d18dde4779488d50c9f9bda299a

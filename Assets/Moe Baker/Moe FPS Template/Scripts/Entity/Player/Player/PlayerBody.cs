@@ -56,12 +56,11 @@ namespace Moe.FPSTemplate
 
         public virtual void UpdateAnimator()
         {
-            Vector2 move = Controller.Movement.Speed.Vector;
-
-            move /= Controller.Movement.Speed.Value.Max;
-
             Crouching = Controller.CurrentState == ControllerState.Crouching;
             Proning = Controller.CurrentState == ControllerState.Proning;
+
+            Vector2 move = Controller.Movement.Speed.Vector;
+            move /= Controller.Movement.Speed.Value.Max;
 
             if (Controller.CurrentState == ControllerState.Sprinting)
                 move *= 2;
